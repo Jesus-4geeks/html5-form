@@ -1,0 +1,7 @@
+form:invalid #alert {
+    display: block;
+}
+
+form:valid #alert {
+    display: none;
+}

@@ -40,19 +40,19 @@
 
           <fieldset class="row gx-4 pb-3">
             <!-- Card -->
-            <div class="col-5">
+            <div class="col-12 col-lg-5">
               <label for="card" class="form-label">Card #</label>
               <input type="text" id="card" name="card" class="form-control" placeholder="XXXXXXXXXXXXXXXX" required pattern="\d{16}">
             </div>
             
             <!-- CVC # -->
-            <div class="col-3">
+            <div class="col-12 col-lg-3">
               <label for="cvc" class="form-label">CVC #</label>
               <input type="number" id="cvc" name="cvc" class="form-control" placeholder="0000" required pattern="\d{4}">
             </div>
             
             <!-- Amount -->
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
               <label for="amount" class="form-label">Amount</label>
               <div class="input-group">
                 <span class="input-group-text">$</span>
@@ -63,13 +63,13 @@
 
           <fieldset class="row gx-4 pb-3">
             <!-- First Name -->
-            <div class="col-6">
+            <div class="col-12 col-lg-6">
               <label for="first-name" class="form-label">First Name</label>
               <input type="text" id="first-name" name="first-name" class="form-control" required>
             </div>
             
             <!-- Last Name -->
-            <div class="col-6">
+            <div class="col-12 col-lg-6">
               <label for="last-name" class="form-label">Last Name</label>
               <input type="text" id="last-name" name="last-name" class="form-control" required>
             </div>
@@ -77,13 +77,13 @@
 
           <fieldset class="row gx-4 pb-3">
             <!-- City -->
-            <div class="col-6">
+            <div class="col-12 col-lg-6">
               <label for="city" class="form-label">City</label>
               <input type="text" id="city" name="city" class="form-control" required>
             </div>
 
             <!-- State -->
-            <div class="col-3">
+            <div class="col-12 col-lg-3">
               <label for="state" class="form-label">State</label>
               <select name="state" id="state" class="form-select">
                 <option value="" disabled selected>Pick a state</option>
@@ -91,7 +91,7 @@
             </div>
 
             <!-- Postal Code -->
-            <div class="col-3">
+            <div class="col-12 col-lg-3">
               <label for="postal-code" class="form-label">Postal Code</label>
               <input type="number" id="postal-code" name="postal-code" class="form-control" required pattern="\d{5}">
             </div>
@@ -99,22 +99,25 @@
 
           <fieldset class="row gx-4 pb-3">
             <!-- We accept: -->
-            <div class="col-2 me-auto">
+            <div class="col-12 col-lg-2 me-auto">
               <label class="form-label">We accept:</label>
               <div class="rounded-2 border bg-secondary py-2 px-3">
                 <input type="radio" name="card" id="cards" value="card-1" checked>
                 <i class="text-white fs-5 me-3 fa-brands fa-cc-visa"></i>
+
                 <input type="radio" name="card" id="cards" value="card-2">
                 <i class="text-white fs-5 me-3 fa-brands fa-cc-mastercard"></i>
+
                 <input type="radio" name="card" id="cards" value="card-3">
                 <i class="text-white fs-5 me-3 fa-brands fa-cc-paypal"></i>
+
                 <input type="radio" name="card" id="cards" value="card-4">
                 <i class="text-white fs-5 fa-brands fa-cc-apple-pay"></i>
               </div>
             </div>
 
             <!-- Message -->
-            <div class="col-6">
+            <div class="col-12 col-lg-6">
               <label for="message" class="form-label">Message</label>
               <textarea name="message" id="message" class="form-control" rows="3"></textarea>
               <small class="form-text text-muted">Add any notes here.</small>
